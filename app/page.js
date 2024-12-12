@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Play, Book, Radio, Users, Search, Clock } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 export default function Homepage() {
   const episodes = [
