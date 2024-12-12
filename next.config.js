@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+import { Icon } from 'lucide-react';
+import { MessageSquare } from 'lucide-react';
 
-module.exports = nextConfig
+const MyComponent = () => (
+  <Icon as={MessageSquare} />
+);
