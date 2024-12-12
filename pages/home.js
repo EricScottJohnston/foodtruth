@@ -1,3 +1,4 @@
+npm install 'lucide-react';
 import React from 'react';
 import { Play, Book, Radio, Users, Search, Clock } from 'lucide-react';
 
