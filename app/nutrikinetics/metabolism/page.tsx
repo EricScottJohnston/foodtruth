@@ -5,6 +5,7 @@ import { Play, Pause, ChevronRight, Info } from 'lucide-react';
 
 export default function NutrikineticsVisualization() {
   // Rest of your code stays exactly the same
+  
 import React, { useState } from 'react';
 import { Play, Pause, ChevronRight, Info } from 'lucide-react';
 
