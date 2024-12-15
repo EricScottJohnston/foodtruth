@@ -1,17 +1,18 @@
 'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { 
-  Flame, // Metabolism - red/orange theme
-  Droplets, // Water - blue theme
-  Zap, // Electrolytes - yellow theme
-  Salt, // Salt - white/gray theme
-  Cookie, // Carbohydrates - brown theme
-  Candy, // Sugar - pink theme
-  Beef, // Protein - red theme
-  Oil, // Fats - golden theme
-  Apple, // Vitamins - green theme
-  Scale // Dieting - purple theme
+  Flame, // Metabolism - energy and heat
+  Droplets, // Water - perfect for water
+  Zap, // Electrolytes - electrical energy
+  Salt, // Salt - available in newer versions
+  Wheat, // Carbohydrates - represents grains/carbs
+  Cookie, // Sugar - sweet foods
+  Egg, // Protein - protein-rich food
+  Flask, // Fats - scientific/molecular
+  Leaf, // Vitamins - natural nutrients
+  Scale // Dieting - weight/balance
 } from 'lucide-react';
 
 export default function NutrikineticsTopics() {
@@ -64,7 +65,7 @@ export default function NutrikineticsTopics() {
       id: "B1E5",
       title: "The Carbohydrates Show",
       desc: "Primary cellular energy source",
-      icon: Cookie,
+      icon: Wheat,
       href: "/nutrikinetics/carbohydrates",
       status: "coming-soon",
       bgColor: "bg-amber-100",
@@ -75,7 +76,7 @@ export default function NutrikineticsTopics() {
       id: "B1E6",
       title: "The Sugar Show",
       desc: "Sweet science of energy",
-      icon: Candy,
+      icon: Cookie,
       href: "/nutrikinetics/sugar",
       status: "coming-soon",
       bgColor: "bg-pink-100",
@@ -86,7 +87,7 @@ export default function NutrikineticsTopics() {
       id: "B1E7",
       title: "The Protein Show",
       desc: "Building blocks of life",
-      icon: Beef,
+      icon: Egg,
       href: "/nutrikinetics/protein",
       status: "coming-soon",
       bgColor: "bg-red-100",
@@ -97,7 +98,7 @@ export default function NutrikineticsTopics() {
       id: "B1E8",
       title: "The Fats Show",
       desc: "Essential energy storage",
-      icon: Oil,
+      icon: Flask,
       href: "/nutrikinetics/fats",
       status: "coming-soon",
       bgColor: "bg-yellow-100",
@@ -108,7 +109,7 @@ export default function NutrikineticsTopics() {
       id: "B1E9",
       title: "The Vitamins Show",
       desc: "Crucial cellular catalysts",
-      icon: Apple,
+      icon: Leaf,
       href: "/nutrikinetics/vitamins",
       status: "coming-soon",
       bgColor: "bg-green-100",
@@ -128,7 +129,7 @@ export default function NutrikineticsTopics() {
     }
   ];
 
-  return (
+    return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold mb-6">Nutrikinetics Visualizations</h1>
