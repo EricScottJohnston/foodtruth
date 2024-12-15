@@ -28,11 +28,13 @@ export default function Homepage() {
             <h3 className="text-lg font-semibold mb-2">Latest Episodes</h3>
             <p className="text-gray-600">Explore our latest podcast episodes and show notes.</p>
           </div>
+        <Link href="/nutrikinetics" className="block">
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Book className="w-8 h-8 text-blue-600 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Nutrikinetics</h3>
             <p className="text-gray-600">Dive deep into how your body processes nutrients.</p>
           </div>
+        </Link>
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Users className="w-8 h-8 text-blue-600 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Expert Insights</h3>
