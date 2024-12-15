@@ -1,10 +1,30 @@
 'use client';
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { Play, Pause, ChevronRight, Info } from 'lucide-react';
 
 export default function NutrikineticsVisualization() {
   const [activeStep, setActiveStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+
+  // Add the new useEffect HERE, right after your useState declarations
+  useEffect(() => {
+    let interval;
+    
+    if (isPlaying) {
+      interval = setInterval(() => {
+        setActiveStep((current) => {
+          return current >= steps.length - 1 ? 0 : current + 1;
+        });
+      }, 2000);
+    }
+
+    return () => clearInterval(interval);
+  }, [isPlaying]);
+
+  const handlePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
 
   const steps = [
     {
