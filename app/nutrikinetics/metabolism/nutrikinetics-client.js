@@ -86,7 +86,7 @@ export default function NutrikineticsVisualization() {
 <div className="bg-gray-100 rounded-lg p-8 mb-8 h-auto flex flex-col items-center justify-center">
   <div className="mb-4">
     <img 
-      src={`/public/images/metabolism/aitubo (${activeStep + 1}).jpg`}
+      src={`/images/metabolism/aitubo (${activeStep + 1}).jpg`}
       alt={`Metabolism step ${activeStep + 1}`}
       width={100}
       height={100}
