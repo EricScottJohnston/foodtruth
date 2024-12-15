@@ -15,7 +15,7 @@ export default function NutrikineticsVisualization() {
        setActiveStep((current) => {
          return current >= steps.length - 1 ? 0 : current + 1;
        });
-     }, 2000);
+     }, 4000);
    }
 
    return () => clearInterval(interval);
