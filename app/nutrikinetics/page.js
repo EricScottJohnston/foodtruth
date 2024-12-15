@@ -3,16 +3,16 @@
 import React from 'react';
 import Link from 'next/link';
 import { 
-  Flame, // Metabolism - energy and heat
-  Droplets, // Water - perfect for water
-  Zap, // Electrolytes - electrical energy
-  Salt, // Salt - available in newer versions
-  Wheat, // Carbohydrates - represents grains/carbs
-  Cookie, // Sugar - sweet foods
-  Egg, // Protein - protein-rich food
-  Flask, // Fats - scientific/molecular
-  Leaf, // Vitamins - natural nutrients
-  Scale // Dieting - weight/balance
+  Flame, // Metabolism 
+  Droplets, // Water
+  Zap, // Electrolytes
+  CircleDot, // replacing Salt
+  Wheat, // Carbohydrates
+  Cookie, // Sugar
+  Egg, // Protein
+  Beaker, // replacing Oil/Flask for Fats
+  Leaf, // Vitamins
+  Scale // Dieting
 } from 'lucide-react';
 
 export default function NutrikineticsTopics() {
