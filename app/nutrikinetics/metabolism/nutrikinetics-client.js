@@ -33,12 +33,12 @@ export default function NutrikineticsVisualization() {
    },
    {
      title: "Initial Contact",
-     time: "T-2 seconds",
-     description: "Brain preparation and hormone release"
+     time: "T Minus 2 seconds",
+     description: "Your brain see's the pizza and prepares for hormone release"
    },
    {
      title: "First Response",
-     time: "T=0",
+     time: "T Minus 0: First Taste",
      description: "Initial cellular reactions begin"
    },
    {
