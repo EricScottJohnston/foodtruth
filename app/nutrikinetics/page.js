@@ -54,13 +54,13 @@ export default function NutrikineticsTopics() {
       id: "B1E4",
       title: "The Salt Show",
       desc: "Essential mineral balance",
-      icon: Salt,
+      icon: CircleDot,  // changed from Salt
       href: "/nutrikinetics/salt",
       status: "coming-soon",
       bgColor: "bg-gray-100",
       iconColor: "text-gray-600",
       hoverColor: "hover:bg-gray-50"
-    },
+    },,
     {
       id: "B1E5",
       title: "The Carbohydrates Show",
@@ -98,7 +98,7 @@ export default function NutrikineticsTopics() {
       id: "B1E8",
       title: "The Fats Show",
       desc: "Essential energy storage",
-      icon: Flask,
+      icon: Beaker,  // changed from Oil
       href: "/nutrikinetics/fats",
       status: "coming-soon",
       bgColor: "bg-yellow-100",
