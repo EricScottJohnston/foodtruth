@@ -86,7 +86,9 @@ export default function NutrikineticsVisualization() {
 <div className="bg-gray-100 rounded-lg p-8 mb-8 h-auto flex flex-col items-center justify-center">
   <div className="mb-4">
     <img 
-      src={`/images/metabolism/aitubo (${activeStep + 1}).jpg`}
+      src={`/source/images/metabolism/${activeStep === 0 ? 'Elements_Forged' : 
+           activeStep === 1 ? 'Brain_Releasing_Hormones' : 
+           'Nutrient_Uptake'}.jpg`}
       alt={`Metabolism step ${activeStep + 1}`}
       width={100}
       height={100}
@@ -98,6 +100,12 @@ export default function NutrikineticsVisualization() {
       }}
     />
   </div>
+  <div className="text-center">
+    <h3 className="text-2xl font-bold mb-4">{steps[activeStep].title}</h3>
+    <p className="text-gray-600 mb-2">{steps[activeStep].time}</p>
+    <p className="text-lg">{steps[activeStep].description}</p>
+  </div>
+</div>
   <div className="text-center">
     <h3 className="text-2xl font-bold mb-4">{steps[activeStep].title}</h3>
     <p className="text-gray-600 mb-2">{steps[activeStep].time}</p>
