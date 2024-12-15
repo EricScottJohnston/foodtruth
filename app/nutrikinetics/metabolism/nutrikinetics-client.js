@@ -82,14 +82,28 @@ export default function NutrikineticsVisualization() {
             </div>
           </div>
 
-          {/* Visualization Stage */}
-          <div className="bg-gray-100 rounded-lg p-8 mb-8 h-96 flex items-center justify-center">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">{steps[activeStep].title}</h3>
-              <p className="text-gray-600 mb-2">{steps[activeStep].time}</p>
-              <p className="text-lg">{steps[activeStep].description}</p>
-            </div>
-          </div>
+{/* Visualization Stage */}
+<div className="bg-gray-100 rounded-lg p-8 mb-8 h-auto flex flex-col items-center justify-center">
+  <div className="mb-4">
+    <img 
+      src={`/public/images/metabolism/aitubo (${activeStep + 1}).jpg`}
+      alt={`Metabolism step ${activeStep + 1}`}
+      width={100}
+      height={100}
+      className="object-contain"
+      style={{ 
+        display: activeStep < 3 ? 'block' : 'none',
+        width: '100px',
+        height: '100px'
+      }}
+    />
+  </div>
+  <div className="text-center">
+    <h3 className="text-2xl font-bold mb-4">{steps[activeStep].title}</h3>
+    <p className="text-gray-600 mb-2">{steps[activeStep].time}</p>
+    <p className="text-lg">{steps[activeStep].description}</p>
+  </div>
+</div>
 
           {/* Controls and Information */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
