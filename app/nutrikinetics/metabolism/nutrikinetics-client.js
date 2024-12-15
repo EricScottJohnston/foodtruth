@@ -106,16 +106,16 @@ export default function NutrikineticsVisualization() {
            <div className="mb-4">
              <img 
                src={`/images/metabolism/${activeStep === 0 ? 'Elements_Forged' : 
-                    activeStep === 1 ? 'Brain_Releasing_Hormones' : 
+                    activeStep === 1 ? 'Brain_Hormone_Release' : 
                     'Nutrient_Uptake'}.jpg`}
                alt={`Metabolism step ${activeStep + 1}`}
-               width={100}
-               height={100}
+               width={300}
+               height={300}
                className="object-contain"
                style={{ 
                  display: activeStep < 3 ? 'block' : 'none',
-                 width: '100px',
-                 height: '100px'
+                 width: '300px',
+                 height: '300px'
                }}
              />
            </div>
