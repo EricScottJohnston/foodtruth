@@ -118,8 +118,8 @@ export default function NutrikineticsVisualization() {
                 className="object-contain"
                 style={{ 
                   display: activeStep < 5 ? 'block' : 'none',
-                  width: '100px',
-                  height: '100px'
+                  width: '600px',
+                  height: '600px'
                 }}
               />
             </div>
