@@ -107,7 +107,7 @@ export default function NutrikineticsVisualization() {
               <img 
                 src={`/images/metabolism/${
                   activeStep === 0 ? 'Elements_Forged' : 
-                  activeStep === 1 ? 'Brain_Releasing_Hormones' : 
+                  activeStep === 1 ? 'Brain_Hormone_Release' : 
                   activeStep === 2 ? 'Nutrient_Uptake' :
                   activeStep === 3 ? 'Digestion_System' :
                   'Cell_Uptake'
