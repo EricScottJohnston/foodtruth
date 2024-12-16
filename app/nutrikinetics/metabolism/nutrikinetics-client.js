@@ -102,23 +102,24 @@ export default function NutrikineticsVisualization() {
          </div>
 
          {/* Visualization Stage */}
-         <div className="bg-gray-100 rounded-lg p-8 mb-8 h-auto flex flex-col items-center justify-center">
-           <div className="mb-4">
-             <img 
-               src={`/images/metabolism/${activeStep === 0 ? 'Elements_Forged' : 
-                    activeStep === 1 ? 'Brain_Hormone_Release' : 
-                    'Nutrient_Uptake'}.jpg`}
-               alt={`Metabolism step ${activeStep + 1}`}
-               width={300}
-               height={300}
-               className="object-contain"
-               style={{ 
-                 display: activeStep < 3 ? 'block' : 'none',
-                 width: '300px',
-                 height: '300px'
-               }}
-             />
-           </div>
+<img 
+  src={`/images/metabolism/${
+    activeStep === 0 ? 'Elements_Forged' : 
+    activeStep === 1 ? 'Brain_Releasing_Hormones' : 
+    activeStep === 2 ? 'Nutrient_Uptake' :
+    activeStep === 3 ? 'Digestion_System' :
+    'Cell_Uptake'
+  }.jpg`}
+  alt={`Metabolism step ${activeStep + 1}`}
+  width={100}
+  height={100}
+  className="object-contain"
+  style={{ 
+    display: activeStep < 5 ? 'block' : 'none',  // Changed from 3 to 5
+    width: '100px',
+    height: '100px'
+  }}
+/>
            <div className="text-center">
              <h3 className="text-2xl font-bold mb-4">{steps[activeStep].title}</h3>
              <p className="text-gray-600 mb-2">{steps[activeStep].time}</p>
