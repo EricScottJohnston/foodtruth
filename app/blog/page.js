@@ -1,176 +1,98 @@
-'use client';
+import { Outfit } from 'next/font/google'
 
-import React from 'react';
-import Link from 'next/link';
-import { Book } from 'lucide-react';
+const outfit = Outfit({ subsets: ['latin'] })
 
-export default function BlogPage() {
+export default function B1E1Blog() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-blue-50 py-12">
-      <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold mb-2 text-gray-800">Food Truth Blog</h1>
-        <p className="text-gray-600 mb-8">Explore our detailed show notes and additional resources</p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Episode 1 */}
-          <Link href="/blog/B1E1">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E1</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Metabolism Show</h2>
-              <p className="text-gray-600 mb-4">Discover how your body's foundry turns food into energy</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>January 2024</span>
-                <span>10 min read</span>
-              </div>
+    <div className="min-h-screen bg-gray-50 py-12">
+      <div className="flex justify-between max-w-[1800px] mx-auto">
+        {/* Left Ad Space */}
+        <div className="hidden xl:block w-[160px] min-h-screen sticky top-0">
+          <div className="bg-white p-4 rounded-lg shadow-md">
+            <div className="h-[600px] flex items-center justify-center text-gray-400">
+              Ad Space
             </div>
-          </Link>
+          </div>
+        </div>
 
-          {/* Episode 2 */}
-          <Link href="/blog/B1E2">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E2</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Water Show</h2>
-              <p className="text-gray-600 mb-4">Explore how water flows through your body's systems</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>February 2024</span>
-                <span>8 min read</span>
-              </div>
-            </div>
-          </Link>
+        {/* Main Content */}
+        <article className="container mx-auto px-6 max-w-4xl">
+          <h1 className={`${outfit.className} text-3xl md:text-4xl font-bold mb-6 text-gray-800`}>
+            Your Body's Foundry: Understanding Your Metabolic Symphony
+          </h1>
 
-          {/* Episode 3 */}
-          <Link href="/blog/B1E3">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E3</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Electrolytes Show</h2>
-              <p className="text-gray-600 mb-4">Understanding your body's electrical system</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>March 2024</span>
-                <span>12 min read</span>
-              </div>
+          <div className="prose prose-lg prose-blue max-w-none">
+            {/* Author and date info */}
+            <div className="flex items-center gap-4 text-gray-600 mb-8 text-sm">
+              <span>Published January 2024</span>
+              <span>•</span>
+              <span>10 min read</span>
             </div>
-          </Link>
 
-          {/* Episode 4 */}
-          <Link href="/blog/B1E4">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E4</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Salt Show</h2>
-              <p className="text-gray-600 mb-4">The essential mineral that keeps your cells in balance</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>April 2024</span>
-                <span>9 min read</span>
-              </div>
-            </div>
-          </Link>
+            {/* Main content with enhanced typography */}
+            <p className="text-lg leading-relaxed mb-6">
+              When we say we "burn calories," we're not actually setting anything on fire. Instead, your body runs a sophisticated chemical foundry that transforms food into life itself. In Episode 1 of Food Truth, we explored this remarkable process, but let's dig even deeper into how your metabolic foundry really works.
+            </p>
 
-          {/* Episode 5 */}
-          <Link href="/blog/B1E5">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E5</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Carbohydrates Show</h2>
-              <p className="text-gray-600 mb-4">Your body's preferred energy source explained</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>May 2024</span>
-                <span>11 min read</span>
-              </div>
-            </div>
-          </Link>
+            <p className="text-gray-700 mb-6">
+              Every cell in your body is like a tiny factory running 24/7. Right now, as you read these words, trillions of chemical reactions are taking place inside you. Your liver cells are processing nutrients, your muscle cells are generating energy, and your brain cells are burning through glucose to power your thoughts.
+            </p>
 
-          {/* Episode 6 */}
-          <Link href="/blog/B1E6">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E6</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Sugar Show</h2>
-              <p className="text-gray-600 mb-4">Sweet science and metabolic mysteries unveiled</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>June 2024</span>
-                <span>10 min read</span>
-              </div>
-            </div>
-          </Link>
+            <p className="text-gray-700 mb-6">
+              The complexity of this system is staggering. Your metabolism isn't just one process -- it's a vast network of interconnected reactions. Some break down molecules to release energy (catabolism), while others build new molecules (anabolism). These processes happen simultaneously, regulated by an intricate dance of hormones and enzymes.
+            </p>
 
-          {/* Episode 7 */}
-          <Link href="/blog/B1E7">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E7</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Protein Show</h2>
-              <p className="text-gray-600 mb-4">Building blocks of life and cellular construction</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>July 2024</span>
-                <span>13 min read</span>
-              </div>
-            </div>
-          </Link>
+            <h2 className={`${outfit.className} text-2xl font-semibold mt-8 mb-4 text-gray-800`}>
+              The Protein Pathway
+            </h2>
 
-          {/* Episode 8 */}
-          <Link href="/blog/B1E8">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E8</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Fats Show</h2>
-              <p className="text-gray-600 mb-4">Essential nutrients and energy storage revealed</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>August 2024</span>
-                <span>11 min read</span>
-              </div>
-            </div>
-          </Link>
+            <p className="text-gray-700 mb-6">
+              Take protein metabolism, for example. When you eat a piece of chicken, your digestive system breaks down its proteins into amino acids. But that's just the beginning. Your cells then reassemble these amino acids into new proteins specific to your needs -- from muscle fibers to immune system antibodies. Any excess amino acids don't go to waste; they're converted into glucose or fatty acids for energy.
+            </p>
 
-          {/* Episode 9 */}
-          <Link href="/blog/B1E9">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E9</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Vitamins Show</h2>
-              <p className="text-gray-600 mb-4">Crucial compounds that power your cellular processes</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>September 2024</span>
-                <span>12 min read</span>
-              </div>
-            </div>
-          </Link>
+            <h2 className={`${outfit.className} text-2xl font-semibold mt-8 mb-4 text-gray-800`}>
+              Your Brain's Control Room
+            </h2>
 
-          {/* Episode 10 */}
-          <Link href="/blog/B1E10">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-blue-200">
-              <div className="flex items-center mb-4">
-                <Book className="w-6 h-6 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-blue-600">Episode B1E10</span>
-              </div>
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">The Dieting Show</h2>
-              <p className="text-gray-600 mb-4">Science-based approaches to nutrition and health</p>
-              <div className="flex justify-between text-sm text-gray-500">
-                <span>October 2024</span>
-                <span>14 min read</span>
-              </div>
+            <p className="text-gray-700 mb-6">
+              Your brain plays a crucial role in this metabolic symphony. The hypothalamus acts as your body's master control room, constantly monitoring hormone levels, nutrient availability, and energy needs. It can trigger hunger when you need more fuel, or signal your body to break down stored energy when food isn't available.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Perhaps most fascinating is how your metabolism adapts to your needs. During exercise, it can ramp up energy production within seconds. While you sleep, it shifts to repair and maintenance mode. When food is scarce, it becomes more efficient at conserving energy.
+            </p>
+
+            <h2 className={`${outfit.className} text-2xl font-semibold mt-8 mb-4 text-gray-800`}>
+              Daily Rhythms and Responses
+            </h2>
+
+            <p className="text-gray-700 mb-6">
+              Understanding metabolism helps explain many common experiences. That mid-afternoon energy crash? It might be your body responding to changing insulin levels. The extra energy after exercise? Thank your metabolism's afterburn effect, technically known as excess post-exercise oxygen consumption (EPOC).
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              But metabolism isn't just about energy and nutrients. It's also about maintaining balance. Your body keeps its temperature at 98.6°F (37°C), not through one big thermostat, but through countless metabolic reactions generating precisely controlled amounts of heat. Even your pH balance, crucial for survival, is maintained through metabolic processes.
+            </p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded">
+              <p className="text-gray-800 italic">
+                The next time someone talks about "boosting metabolism," remember: you're not stoking a fire. You're conducting an incredibly sophisticated chemical symphony that's been fine-tuned by millions of years of evolution. Every bite of food starts a journey through your personal foundry, transformed by chemistry into the energy that powers your life.
+              </p>
             </div>
-          </Link>
+
+            <p className="text-blue-600 font-semibold mt-8">
+              Want to learn more? Listen to Episode 1 of Food Truth, where we follow a single bite of food through this remarkable journey, and discover how your body's foundry turns nutrients into life itself.
+            </p>
+          </div>
+        </article>
+
+        {/* Right Ad Space */}
+        <div className="hidden xl:block w-[160px] min-h-screen sticky top-0">
+          <div className="bg-white p-4 rounded-lg shadow-md">
+            <div className="h-[600px] flex items-center justify-center text-gray-400">
+              Ad Space
+            </div>
+          </div>
         </div>
       </div>
     </div>
