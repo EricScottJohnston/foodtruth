@@ -1,79 +1,58 @@
-import { Outfit } from 'next/font/google'
+'use client';
 
-const outfit = Outfit({ subsets: ['latin'] })
+import React from 'react';
+import Link from 'next/link';
+import { Book } from 'lucide-react';
 
-export default function B1E1Blog() {
+export default function BlogPage() {
+  const blogPosts = [
+    {
+      id: "B1E1",
+      title: "The Metabolism Show",
+      description: "Discover how your body's foundry turns food into energy",
+      date: "2024-01",
+      readTime: "10 min read"
+    },
+    {
+      id: "B1E2",
+      title: "The Water Show",
+      description: "Explore how water flows through your body's systems",
+      date: "2024-02",
+      readTime: "8 min read"
+    },
+    {
+      id: "B1E3",
+      title: "The Electrolytes Show",
+      description: "Understanding your body's electrical system",
+      date: "2024-03",
+      readTime: "12 min read"
+    }
+    // Add more blog posts as they're published
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50 py-12">
-      <article className="container mx-auto px-6 max-w-4xl">
-        <h1 className={`${outfit.className} text-3xl md:text-4xl font-bold mb-6 text-gray-800`}>
-          Your Body's Foundry: Understanding Your Metabolic Symphony
-        </h1>
-
-        <div className="prose prose-lg prose-blue max-w-none">
-          {/* Author and date info */}
-          <div className="flex items-center gap-4 text-gray-600 mb-8 text-sm">
-            <span>Published January 2024</span>
-            <span>•</span>
-            <span>10 min read</span>
-          </div>
-
-          {/* Main content with enhanced typography */}
-          <p className="text-lg leading-relaxed mb-6">
-            When we say we "burn calories," we're not actually setting anything on fire. Instead, your body runs a sophisticated chemical foundry that transforms food into life itself. In Episode 1 of Food Truth, we explored this remarkable process, but let's dig even deeper into how your metabolic foundry really works.
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            Every cell in your body is like a tiny factory running 24/7. Right now, as you read these words, trillions of chemical reactions are taking place inside you. Your liver cells are processing nutrients, your muscle cells are generating energy, and your brain cells are burning through glucose to power your thoughts.
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            The complexity of this system is staggering. Your metabolism isn't just one process -- it's a vast network of interconnected reactions. Some break down molecules to release energy (catabolism), while others build new molecules (anabolism). These processes happen simultaneously, regulated by an intricate dance of hormones and enzymes.
-          </p>
-
-          <h2 className={`${outfit.className} text-2xl font-semibold mt-8 mb-4 text-gray-800`}>
-            The Protein Pathway
-          </h2>
-
-          <p className="text-gray-700 mb-6">
-            Take protein metabolism, for example. When you eat a piece of chicken, your digestive system breaks down its proteins into amino acids. But that's just the beginning. Your cells then reassemble these amino acids into new proteins specific to your needs -- from muscle fibers to immune system antibodies. Any excess amino acids don't go to waste; they're converted into glucose or fatty acids for energy.
-          </p>
-
-          <h2 className={`${outfit.className} text-2xl font-semibold mt-8 mb-4 text-gray-800`}>
-            Your Brain's Control Room
-          </h2>
-
-          <p className="text-gray-700 mb-6">
-            Your brain plays a crucial role in this metabolic symphony. The hypothalamus acts as your body's master control room, constantly monitoring hormone levels, nutrient availability, and energy needs. It can trigger hunger when you need more fuel, or signal your body to break down stored energy when food isn't available.
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            Perhaps most fascinating is how your metabolism adapts to your needs. During exercise, it can ramp up energy production within seconds. While you sleep, it shifts to repair and maintenance mode. When food is scarce, it becomes more efficient at conserving energy.
-          </p>
-
-          <h2 className={`${outfit.className} text-2xl font-semibold mt-8 mb-4 text-gray-800`}>
-            Daily Rhythms and Responses
-          </h2>
-
-          <p className="text-gray-700 mb-6">
-            Understanding metabolism helps explain many common experiences. That mid-afternoon energy crash? It might be your body responding to changing insulin levels. The extra energy after exercise? Thank your metabolism's afterburn effect, technically known as excess post-exercise oxygen consumption (EPOC).
-          </p>
-
-          <p className="text-gray-700 mb-6">
-            But metabolism isn't just about energy and nutrients. It's also about maintaining balance. Your body keeps its temperature at 98.6°F (37°C), not through one big thermostat, but through countless metabolic reactions generating precisely controlled amounts of heat. Even your pH balance, crucial for survival, is maintained through metabolic processes.
-          </p>
-
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded">
-            <p className="text-gray-800 italic">
-              The next time someone talks about "boosting metabolism," remember: you're not stoking a fire. You're conducting an incredibly sophisticated chemical symphony that's been fine-tuned by millions of years of evolution. Every bite of food starts a journey through your personal foundry, transformed by chemistry into the energy that powers your life.
-            </p>
-          </div>
-
-          <p className="text-blue-600 font-semibold mt-8">
-            Want to learn more? Listen to Episode 1 of Food Truth, where we follow a single bite of food through this remarkable journey, and discover how your body's foundry turns nutrients into life itself.
-          </p>
+      <div className="container mx-auto px-6">
+        <h1 className="text-4xl font-bold mb-8">Food Truth Blog</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {blogPosts.map((post) => (
+            <Link href={`/blog/${post.id}`} key={post.id}>
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-6">
+                <div className="flex items-center mb-4">
+                  <Book className="w-6 h-6 text-blue-600 mr-2" />
+                  <span className="text-sm text-gray-500">Episode {post.id}</span>
+                </div>
+                <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
+                <p className="text-gray-600 mb-4">{post.description}</p>
+                <div className="flex justify-between text-sm text-gray-500">
+                  <span>{post.date}</span>
+                  <span>{post.readTime}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
-      </article>
+      </div>
     </div>
   );
 }
