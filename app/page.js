@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import React from 'react';
 import { Play, Book, Radio, Users, Search } from 'lucide-react';
+import { Outfit } from 'next/font/google'
+
+const outfit = Outfit({ subsets: ['latin'] })
 
 export default function Homepage() {
   return (
@@ -8,8 +11,8 @@ export default function Homepage() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-6 py-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Food Truth
+          <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${outfit.className}`}>
+          Food Truth
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             Understanding the science of nutrition, one bite at a time.
@@ -29,6 +32,19 @@ export default function Homepage() {
             <h3 className="text-lg font-semibold mb-2">Latest Episodes</h3>
             <p className="text-gray-600">Explore our latest podcast episodes and show notes.</p>
           </div>
+        <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+  <Link href="/blog" className="block">
+    <div className="flex flex-col h-full">
+      <div className="flex-grow">
+        <svg className="w-8 h-8 text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9.5a2.5 2.5 0 00-2.5-2.5H15" />
+        </svg>
+        <h3 className="text-lg font-semibold mb-2">Blog</h3>
+        <p className="text-gray-600">Read our latest insights and articles.</p>
+      </div>
+    </div>
+  </Link>
+</div>
         <Link href="/nutrikinetics" className="block">
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Book className="w-8 h-8 text-blue-600 mb-4" />
