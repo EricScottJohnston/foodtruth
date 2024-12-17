@@ -26,7 +26,7 @@ export default function Homepage() {
 
       {/* Quick Navigation */}
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <Radio className="w-8 h-8 text-blue-600 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Latest Episodes</h3>
