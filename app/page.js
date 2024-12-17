@@ -1,15 +1,19 @@
+'use client';
+
 import Link from 'next/link'
-import React from 'react';
+import React, { useState } from 'react';
 import { Play, Book, Radio, Users, Search } from 'lucide-react';
 import { Outfit } from 'next/font/google'
 
 const outfit = Outfit({ subsets: ['latin'] })
 
 export default function Homepage() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white">
         <div className="container mx-auto px-6 py-16">
           <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${outfit.className}`}>
           Food Truth
@@ -17,10 +21,52 @@ export default function Homepage() {
           <p className="text-xl md:text-2xl mb-8">
             Understanding the science of nutrition, one bite at a time.
           </p>
-          <button className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-blue-50">
-            <Play className="mr-2" />
-            Listen Latest Episode
-          </button>
+          <div className="relative inline-block">
+  <button 
+    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+    className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-blue-50"
+  >
+    <Play className="mr-2" />
+    Listen Now
+  </button>
+  
+  {isDropdownOpen && (
+    <div className="absolute mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-10">
+      <a 
+        href="https://spotify.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-50"
+      >
+        Spotify
+      </a>
+      <a 
+        href="https://podcasts.apple.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-50"
+      >
+        Apple Podcasts
+      </a>
+      <a 
+        href="https://podcasts.google.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-50"
+      >
+        Google Podcasts
+      </a>
+      <a 
+        href="https://youtube.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-50"
+      >
+        YouTube
+      </a>
+    </div>
+  )}
+</div>
         </div>
       </div>
 
