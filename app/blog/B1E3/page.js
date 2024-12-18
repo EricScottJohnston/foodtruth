@@ -19,12 +19,10 @@ export default function B1E2Blog() {
 
          <p className="text-lg leading-relaxed mb-6">
            You're not just a water-based organism – you're an electrically-powered being. Every thought you have, every heartbeat, every muscle movement depends on tiny charged particles called electrolytes. In Episode 3 of Food Truth, we explored these essential minerals, but their story runs even deeper.
-         </p>
+          </p>
 
          <p className="text-gray-700 mb-6">
-           Think of electrolytes as nature's battery system. When table salt (sodium chloride) dissolves in your body, it splits into sodium and chloride ions – atoms that carry electrical charges. These charged particles create the electrical gradients that power your cellular machinery. It's like having billions of microscopic batteries, all working in perfect harmony.
-
-The precision of this system is remarkable. Your nerve cells maintain a delicate balance of sodium and potassium ions across their membranes. When a nerve fires, these ions swap places faster than you can blink, creating electrical signals that travel at speeds up to 120 meters per second. Every thought you're having right now exists because of this ionic dance.
+           Think of electrolytes as nature's battery system. When table salt or sodium chloride dissolves in your body, it splits into sodium and chloride ions – atoms that carry electrical charges. These charged particles create the electrical gradients that power your cellular machinery. It's like having billions of microscopic batteries, all working in perfect harmony. The precision of this system is remarkable. Your nerve cells maintain a delicate balance of sodium and potassium ions across their membranes. When a nerve fires, these ions swap places faster than you can blink, creating electrical signals that travel at speeds up to 120 meters per second. Every thought you're having right now exists because of this ionic dance.
 
          </p>
 
@@ -33,8 +31,7 @@ The precision of this system is remarkable. Your nerve cells maintain a delicate
          </h2>
 
          <p className="text-gray-700 mb-6">
-           Different electrolytes play distinct but interconnected roles. Calcium isn't just for bones – it triggers muscle contractions and helps blood clot. Magnesium acts like a master key, activating hundreds of enzymes throughout your body. Potassium helps maintain your heart's rhythm, while chloride helps create stomach acid for digestion.
-Your body maintains electrolyte balance with incredible precision. Special sensors in your brain can detect changes as small as 1% in electrolyte concentrations. When levels shift, hormones signal your kidneys to adjust, either conserving or eliminating electrolytes as needed. It's like having a perfect chemical thermostat system.
+           Different electrolytes play distinct but interconnected roles. Calcium isn't just for bones – it triggers muscle contractions and helps blood clot. Magnesium acts like a master key, activating hundreds of enzymes throughout your body. Potassium helps maintain your heart's rhythm, while chloride helps create stomach acid for digestion. Your body maintains electrolyte balance with incredible precision. Special sensors in your brain can detect changes as small as 1% in electrolyte concentrations. When levels shift, hormones signal your kidneys to adjust, either conserving or eliminating electrolytes as needed. It's like having a perfect chemical thermostat system.
          </p>
          <p className="text-gray-700 mb-6">
            PARAGRAPH HERE
@@ -43,9 +40,7 @@ Your body maintains electrolyte balance with incredible precision. Special senso
            Where Did Electrolytes Come From?
          </h2>
          <p className="text-gray-700 mb-6">
-           The evolutionary story of electrolytes is fascinating. The sodium concentration in your blood is remarkably similar to that of ancient seas where life began. We still carry a bit of the primordial ocean within us, our cells bathed in a carefully regulated salt solution that echoes life's origins.
-
-Understanding electrolytes explains many common experiences. That muscle cramp during exercise? Could be from electrolyte imbalance. Feeling weak after a stomach bug? You've lost crucial electrolytes. This is why sports drinks aren't just flavored water – they're designed to replace these essential minerals.
+           The evolutionary story of electrolytes is fascinating. The sodium concentration in your blood is remarkably similar to that of ancient seas where life began. We still carry a bit of the primordial ocean within us, our cells bathed in a carefully regulated salt solution that echoes life's origins. Understanding electrolytes explains many common experiences. That muscle cramp during exercise? Could be from electrolyte imbalance. Feeling weak after a stomach bug? You've lost crucial electrolytes. This is why sports drinks aren't just flavored water – they're designed to replace these essential minerals.
 
          </p>
 
