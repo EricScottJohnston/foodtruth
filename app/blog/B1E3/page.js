@@ -60,8 +60,7 @@ export default function B1E2Blog() {
            Want to learn more? Listen to Episode 3 of Food Truth, where we explore the incredible journey of electrolytes through your body and discover how these star-forged ions keep you alive.
 
          </p>
-       </div>
-     </article>
+       </article>
    </div>
  );
 
