@@ -1,5 +1,3 @@
-'use client';
-
 export default function B1E3Blog() {
   return (
     <div>
