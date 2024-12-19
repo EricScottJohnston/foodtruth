@@ -1,10 +1,9 @@
-import { Analytics } from '@vercel/analytics/react';
-import './globals.css'
+'use client';
 
-export default function RootLayout({ children }) {
+export default function B1E3Blog() {
   return (
-    <html lang="en">
-      <body>{children}<Analytics /></body>
-    </html>
-  )
+    <div>
+      <h1>Test</h1>
+    </div>
+  );
 }
