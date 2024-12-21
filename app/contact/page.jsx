@@ -15,13 +15,19 @@ export default function ContactPage() {
             Have questions about nutrition or our podcast? We'd love to hear from you!
           </p>
 
-          <form 
-            action="https://formsubmit.co/getfoodtruth@gmail.com" 
-            method="POST"
-            className="space-y-6"
-          >
-            {/* This redirects back to your site after submission */}
-            <input type="hidden" name="_next" value="https://getfoodtruth.com/" />
+<form 
+  action="https://formsubmit.co/your-email@gmail.com" 
+  method="POST"
+  className="space-y-6"
+>
+  {/* Redirect back to homepage after submission */}
+  <input type="hidden" name="_next" value="https://getfoodtruth.com" />
+  
+  {/* Prevents autoresponse email */}
+  <input type="hidden" name="_autoresponse" value="Thank you for your message! We'll get back to you soon." />
+  
+  {/* Prevents captcha */}
+  <input type="hidden" name="_captcha" value="false" />
             
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
