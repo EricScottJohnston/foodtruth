@@ -1,13 +1,19 @@
 'use client';
 // app/blog/page.jsx
 
-import { allPosts } from 'contentlayer/generated'
 import Link from 'next/link'
 
 export default function BlogPage() {
-  const posts = allPosts.sort((a, b) => {
-    return new Date(b.publishedAt) - new Date(a.publishedAt)
-  })
+  const posts = [
+    {
+      id: 1,
+      title: 'Welcome to Food Truth',
+      publishedAt: '2024-01-01',
+      summary: 'Learn about our mission to make nutrition science accessible and understandable for everyone.',
+      slug: '/blog/welcome'
+    },
+    // Add more posts here manually for now
+  ]
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -16,7 +22,7 @@ export default function BlogPage() {
         <div className="grid gap-8">
           {posts.map((post) => (
             <Link 
-              key={post._id} 
+              key={post.id} 
               href={post.slug}
               className="block group"
             >
