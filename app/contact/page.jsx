@@ -16,12 +16,12 @@ export default function ContactPage() {
           </p>
 
           <form 
-            action="https://formsubmit.co/47a8fbc25ebc0df0e3cd468dbe576802" 
+            action="https://formsubmit.co/getfoodtruth@gmail.com" 
             method="POST"
             className="space-y-6"
           >
             {/* This redirects back to your site after submission */}
-            <input type="hidden" name="_next" value="https://getfoodtruth.vercel.app/contact" />
+            <input type="hidden" name="_next" value="https://getfoodtruth.com/" />
             
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">
