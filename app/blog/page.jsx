@@ -1,18 +1,25 @@
 'use client';
-// app/blog/page.jsx
 
+import React from 'react'
 import Link from 'next/link'
 
 export default function BlogPage() {
+  // Hardcoded posts for now
   const posts = [
     {
       id: 1,
       title: 'Welcome to Food Truth',
       publishedAt: '2024-01-01',
       summary: 'Learn about our mission to make nutrition science accessible and understandable for everyone.',
-      slug: '/blog/welcome'
+      href: '#'  // We'll update these links later
     },
-    // Add more posts here manually for now
+    {
+      id: 2,
+      title: 'Understanding Protein Absorption',
+      publishedAt: '2024-01-15',
+      summary: 'A deep dive into how your body processes protein and what factors affect its absorption.',
+      href: '#'
+    }
   ]
 
   return (
@@ -21,31 +28,26 @@ export default function BlogPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Blog</h1>
         <div className="grid gap-8">
           {posts.map((post) => (
-            <Link 
+            <article 
               key={post.id} 
-              href={post.slug}
-              className="block group"
+              className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
             >
-              <article className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform group-hover:-translate-y-1">
-                <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
-                  {post.title}
-                </h2>
-                <time className="text-sm text-gray-500" dateTime={post.publishedAt}>
-                  {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
-                </time>
-                <p className="mt-4 text-gray-600">{post.summary}</p>
-                <div className="mt-4 flex items-center text-blue-600 font-medium">
-                  Read more 
-                  <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">
-                    →
-                  </span>
-                </div>
-              </article>
-            </Link>
+              <h2 className="text-2xl font-semibold text-gray-900 hover:text-blue-600 transition-colors duration-200">
+                {post.title}
+              </h2>
+              <time className="text-sm text-gray-500" dateTime={post.publishedAt}>
+                {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </time>
+              <p className="mt-4 text-gray-600">{post.summary}</p>
+              <div className="mt-4 flex items-center text-blue-600 font-medium">
+                Coming soon
+                <span className="ml-2">→</span>
+              </div>
+            </article>
           ))}
         </div>
       </div>
