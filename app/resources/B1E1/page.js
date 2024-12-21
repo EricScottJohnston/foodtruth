@@ -168,7 +168,7 @@ export default function B1E1Resources() {
                <div>
                  <p className="font-semibold text-gray-800">KEGG (Kyoto Encyclopedia of Genes and Genomes) Metabolism Database</p>
                  <a 
-                   href="https://www.genome.jp/kegg/metabolism.html" 
+                   href="https://www.genome.jp/kegg/pathway.html#metabolism" 
                    target="_blank" 
                    rel="noopener noreferrer" 
                    className="text-sm text-blue-600 hover:text-blue-800 flex items-center"
