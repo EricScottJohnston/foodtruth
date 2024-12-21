@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react';
-import { Play, Book, Radio, Users, Search } from 'lucide-react';
+import { Play, Book, Radio, Search } from 'lucide-react';
 import { Outfit } from 'next/font/google'
 
 const outfit = Outfit({ subsets: ['latin'] })
@@ -98,11 +98,6 @@ export default function Homepage() {
               <p className="text-gray-600">Dive deep into how your body processes nutrients.</p>
             </div>
           </Link>
-          <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <Users className="w-8 h-8 text-blue-600 mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Expert Insights</h3>
-            <p className="text-gray-600">Learn from leading nutrition experts.</p>
-          </div>
           <Link href="/resources">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <Search className="w-8 h-8 text-blue-600 mb-4" />
