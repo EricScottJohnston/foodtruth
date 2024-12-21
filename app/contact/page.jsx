@@ -16,7 +16,7 @@ export default function ContactPage() {
           </p>
 
           <form 
-            action="https://formsubmit.co/getfoodtruth@gmail.com" 
+            action="https://formsubmit.co/47a8fbc25ebc0df0e3cd468dbe576802" 
             method="POST"
             className="space-y-6"
           >
