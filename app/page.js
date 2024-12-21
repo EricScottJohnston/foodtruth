@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react';
-import { Play, Book, Radio, Search } from 'lucide-react';
+import { Play, Book, Radio, Search, BookOpen } from 'lucide-react';
 import { Outfit } from 'next/font/google'
 
 const outfit = Outfit({ subsets: ['latin'] })
@@ -72,12 +72,20 @@ export default function Homepage() {
 
       {/* Quick Navigation */}
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <Link href="/episodes" className="block group">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 h-full transform group-hover:-translate-y-1">
               <Radio className="w-8 h-8 text-blue-600 mb-4" />
               <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-200">Latest Episodes</h3>
               <p className="text-gray-600">Explore our latest podcast episodes and show notes.</p>
+            </div>
+          </Link>
+
+          <Link href="/blog" className="block group">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 h-full transform group-hover:-translate-y-1">
+              <BookOpen className="w-8 h-8 text-blue-600 mb-4" />
+              <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-200">Blog</h3>
+              <p className="text-gray-600">Read our latest insights and nutrition science articles.</p>
             </div>
           </Link>
 
