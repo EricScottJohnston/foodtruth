@@ -13,11 +13,7 @@ export default function B1E1Blog() {
         </h1>
 
         <div className="prose prose-lg prose-blue max-w-none">
-          <div className="flex items-center gap-4 text-gray-600 mb-8 text-sm">
-            <span>Published January 2024</span>
-            <span>•</span>
-            <span>8 min read</span>
-          </div>
+
 
           <p className="text-lg leading-relaxed mb-6">
             When we say we "burn calories," we're not actually setting anything on fire. Instead, your body runs a sophisticated chemical foundry that transforms food into life itself. In Episode 1 of Food Truth, we explored this remarkable process, but let's dig even deeper into how your metabolic foundry really works.
