@@ -8,7 +8,7 @@ export default function BlogPage() {
     {
       id: 1,
       title: 'Your Body\'s Foundry: Understanding Your Metabolic Symphony',
-      publishedAt: '2024-01-21',
+      publishedAt: '2024-12-23',
       summary: 'Explore how your body\'s metabolic processes work together like a sophisticated chemical foundry, transforming food into life itself.',
       slug: '/blog/b1e1'
     },
@@ -92,13 +92,7 @@ export default function BlogPage() {
                 <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
                   {post.title}
                 </h2>
-                <time className="text-sm text-gray-500" dateTime={post.publishedAt}>
-                  {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
-                </time>
+
                 <p className="mt-4 text-gray-600">{post.summary}</p>
                 <div className="mt-4 flex items-center text-blue-600 font-medium">
                   Read more 
