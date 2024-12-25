@@ -155,9 +155,14 @@ export default function Homepage() {
               Help us continue bringing you accurate, accessible nutrition science. Your support makes a difference.
             </p>
             <div className="space-x-4">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
-                Donate Now
-              </button>
+              <a 
+  href="https://buymeacoffee.com/getfoodtruth" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 inline-block"
+>
+  Support Us
+</a>
               <Link 
                 href="/contact" 
                 className="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 border border-blue-600 transition-all duration-200"
