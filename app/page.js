@@ -108,51 +108,58 @@ export default function Homepage() {
       </div>
 
       {/* Featured Content */}
-      <div className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold mb-8">Latest Episodes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-md">
-  <h3 className="text-xl font-semibold mb-4">The Metabolism Show</h3>
-  <iframe 
-    style={{ borderRadius: '12px' }} 
-    src="https://open.spotify.com/embed/episode/4NOQdaTzTDUS1DO1hUJJN9" 
-    width="100%" 
-    height="352" 
-    frameBorder="0" 
-    allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy"
-  ></iframe>
-  <p className="text-gray-600 mt-4">Discover how your body's foundry turns food into energy.</p>
-</div>
+     <div className="container mx-auto px-6 py-12">
+  <h2 className="text-3xl font-bold mb-8">Latest Episodes</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* Episode 1 */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold mb-4">The Metabolism Show</h3>
+      <iframe 
+        style={{ borderRadius: '12px' }} 
+        src="https://open.spotify.com/embed/episode/4NOQdaTzTDUS1DO1hUJJN9" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"
+      ></iframe>
+      <p className="text-gray-600 mt-4">Discover how your body's foundry turns food into energy.</p>
+    </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md">
-  <h3 className="text-xl font-semibold mb-4">The Metabolism Show</h3>
-  <iframe 
-    style={{ borderRadius: '12px' }} 
-    src="https://open.spotify.com/embed/show/080DgvN8H1Dpm0SfmCKZNi?utm_source=generator" 
-    width="100%" 
-    height="352" 
-    frameBorder="0" 
-    allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy"
-  ></iframe>
-  <p className="text-gray-600 mt-4">Discover how your body's foundry turns food into energy.</p>
-</div>
+    {/* Episode 2 */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold mb-4">The Water Show</h3>
+      <iframe 
+        style={{ borderRadius: '12px' }} 
+        src="https://open.spotify.com/embed/episode/3OKBU5jSX7V5T9FxwyTmPQ" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"
+      ></iframe>
+      <p className="text-gray-600 mt-4">Explore how water flows through your body's systems.</p>
+    </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-md group hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
-            <div className="bg-blue-100 rounded-lg p-4 mb-4 group-hover:bg-blue-200 transition-colors duration-200">
-              <Play className="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-200">The Electrolytes Show</h3>
-            <p className="text-gray-600 mb-4">Understanding your body's electrical system.</p>
-            <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-200 flex items-center">
-              Listen Now <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">→</span>
-            </button>
-          </div>
-        </div>
-      </div>
+    {/* Episode 3 */}
+    <div className="bg-white p-6 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold mb-4">The Electrolytes Show</h3>
+      <iframe 
+        style={{ borderRadius: '12px' }} 
+        src="https://open.spotify.com/embed/episode/296kRVRdDCuzhposGbet3v" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"
+      ></iframe>
+      <p className="text-gray-600 mt-4">Understanding your body's electrical system.</p>
+    </div>
+  </div>
+</div>
 
       {/* Support Section */}
       <div className="bg-gray-100">
