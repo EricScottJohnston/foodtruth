@@ -54,7 +54,7 @@ export default function B1E1Blog() {
           </p>
 
           <p className="text-gray-700 mb-6">
-            Understanding metabolism helps explain many common experiences. That mid-afternoon energy crash? It might be your body responding to changing insulin levels. The extra energy after exercise? Thank your metabolism's afterburn effect, technically known as excess post-exercise oxygen consumption (EPOC).
+            Understanding metabolism helps explain many common experiences. That mid-afternoon energy crash? It might be your body responding to changing insulin levels. The extra energy after exercise? Thank your metabolism's afterburn effect, technically known as excess post-exercise oxygen consumption or EPOC.
           </p>
 
           <p className="text-gray-700 mb-6">
