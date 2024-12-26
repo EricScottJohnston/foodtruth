@@ -114,13 +114,19 @@ export default function Homepage() {
           <div className="bg-white p-6 rounded-lg shadow-md group hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
             <div className="bg-blue-100 rounded-lg p-4 mb-4 group-hover:bg-blue-200 transition-colors duration-200">
               <Play className="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-200">The Metabolism Show</h3>
-            <p className="text-gray-600 mb-4">Discover how your body's foundry turns food into energy.</p>
-            <button className="text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-200 flex items-center">
-              Listen Now <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-200">→</span>
-            </button>
-          </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+  <h3 className="text-xl font-semibold mb-4">The Metabolism Show</h3>
+  <iframe 
+    src="https://open.spotify.com/embed/show/080DgvN8H1Dpm0SfmCKZNi" 
+    width="100%" 
+    height="152" 
+    frameBorder="0" 
+    allowtransparency="true" 
+    allow="encrypted-media"
+    className="rounded-lg mb-4"
+  ></iframe>
+  <p className="text-gray-600">Discover how your body's foundry turns food into energy.</p>
+</div>
 
           <div className="bg-white p-6 rounded-lg shadow-md group hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
             <div className="bg-blue-100 rounded-lg p-4 mb-4 group-hover:bg-blue-200 transition-colors duration-200">
