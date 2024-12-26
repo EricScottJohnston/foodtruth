@@ -12,10 +12,22 @@ export default function B1E1Blog() {
           Your Body's Foundry: Understanding Your Metabolic Symphony
         </h1>
 
-        <div className="prose prose-lg prose-blue max-w-none">
+        {/* Spotify Player */}
+        <div className="mb-8">
+          <iframe 
+            style={{ borderRadius: '12px' }} 
+            src="https://open.spotify.com/embed/episode/4NOQdaTzTDUS1DO1hUJJN9" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+          ></iframe>
+        </div>
 
         <div className="prose prose-lg prose-blue max-w-none">
-
+          {/* Rest of your blog content continues here */}
 
           <p className="text-lg leading-relaxed mb-6">
             When we say we "burn calories," we're not actually setting anything on fire. Instead, your body runs a sophisticated chemical foundry that transforms food into life itself. In Episode 1 of Food Truth, we explored this remarkable process, but let's dig even deeper into how your metabolic foundry really works.
