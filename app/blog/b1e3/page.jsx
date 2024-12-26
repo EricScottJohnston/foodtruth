@@ -12,7 +12,22 @@ export default function B1E3Blog() {
           The Electric Body: How Charged Particles Power Your Life
         </h1>
 
+        {/* Spotify Player */}
+        <div className="mb-8">
+          <iframe 
+            style={{ borderRadius: '12px' }} 
+            src="https://open.spotify.com/embed/episode/296kRVRdDCuzhposGbet3v" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+          ></iframe>
+        </div>
+
         <div className="prose prose-lg prose-blue max-w-none">
+          {/* Rest of your blog content continues here */}
           <p className="text-lg leading-relaxed mb-6">
             You're not just a water-based organism -- you're an electrically-powered being. Every thought you have, every heartbeat, every muscle movement depends on tiny charged particles called electrolytes. In Episode 3 of Food Truth, we explored these essential minerals, but their story runs even deeper.
           </p>
