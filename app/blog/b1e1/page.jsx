@@ -12,6 +12,22 @@ export default function B1E1Blog() {
           Your Body's Foundry: Understanding Your Metabolic Symphony
         </h1>
 
+        {/* Spotify Player */}
+        <div className="mb-8">
+          <iframe 
+            style={{ borderRadius: '12px' }} 
+            src="https://open.spotify.com/embed/episode/4NOQdaTzTDUS1DO1hUJJN9" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div className="prose prose-lg prose-blue max-w-none">
+
         <div className="prose prose-lg prose-blue max-w-none">
 
 
