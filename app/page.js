@@ -22,24 +22,25 @@ export default function Homepage() {
             Understanding the science of nutrition, one bite at a time.
           </p>
           <div className="relative inline-block">
-            <button 
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-blue-50 transition-all duration-200"
-            >
-              <Play className="mr-2" />
-              Listen Now
-            </button>
-            
-            {isDropdownOpen && (
-              <div className="absolute mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-10">
-                <a 
-                  href="https://spotify.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-50 transition-colors duration-200"
-                >
-                  Spotify
-                </a>
+          <div className="relative inline-block">
+  <button 
+    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+    className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-blue-50"
+  >
+    <Play className="mr-2" />
+    Listen Now
+  </button>
+  
+  {isDropdownOpen && (
+    <div className="absolute mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-10">
+      <a 
+        href="https://open.spotify.com/show/080DgvN8H1Dpm0SfmCKZNi?si=lRLQvhkJThSPsLCyAxT4IQ" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="block px-4 py-2 text-gray-800 hover:bg-blue-50"
+      >
+        Spotify
+      </a>
                 <a 
                   href="https://podcasts.apple.com" 
                   target="_blank" 
