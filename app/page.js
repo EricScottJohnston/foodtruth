@@ -15,9 +15,9 @@ export default function Homepage() {
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-500 to-blue-800 text-white">
         <div className="container mx-auto px-6 py-16">
-          <h1 className={`text-4xl md:text-6xl font-bold mb-4 ${outfit.className}`}>
-            Food Truth
-          </h1>
+          <h1 className={`${outfit.className} text-4xl md:text-6xl font-bold mb-4`}>
+  Food Truth
+</h1>
           <p className="text-xl md:text-2xl mb-8">
             Understanding the science of nutrition, one bite at a time.
           </p>
