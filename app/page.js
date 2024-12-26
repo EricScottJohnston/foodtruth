@@ -22,8 +22,7 @@ export default function Homepage() {
             Understanding the science of nutrition, one bite at a time.
           </p>
           <div className="relative inline-block">
-          <div className="relative inline-block">
-  <button 
+          <button 
     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
     className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold flex items-center hover:bg-blue-50"
   >
