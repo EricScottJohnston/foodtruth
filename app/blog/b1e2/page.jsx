@@ -12,9 +12,22 @@ export default function B1E2Blog() {
           The Universal Solvent: Your Body's Remarkable Water System
         </h1>
 
+        {/* Spotify Player */}
+        <div className="mb-8">
+          <iframe 
+            style={{ borderRadius: '12px' }} 
+            src="https://open.spotify.com/embed/episode/3OKBU5jSX7V5T9FxwyTmPQ" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+          ></iframe>
+        </div>
+
         <div className="prose prose-lg prose-blue max-w-none">
-
-
+          {/* Rest of your blog content continues here */}
           <p className="text-lg leading-relaxed mb-6">
             Water might seem simple -- just H2O, right? But this molecule is anything but ordinary. In Episode 2 of Food Truth, we explored how water moves through your body, but the story of water gets even more fascinating when we look closer.
           </p>
